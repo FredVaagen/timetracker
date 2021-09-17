@@ -130,7 +130,7 @@ function Timetracker({ data }) {
               setCurrent(monthlyCurrent);
               setPrevious(monthlyPrevious);
             }
-          });
+          }, []);
 
           const [current, setCurrent] = useState(dailyCurrent);
           const [previous, setPrevious] = useState(dailyPrevious);
