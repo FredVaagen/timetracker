@@ -1,0 +1,89 @@
+.container {
+  border-radius: 20px;
+  grid-column: 1;
+  max-width: 250px;
+  justify-self: flex-end;
+  height: auto;
+}
+
+.dashboard_top {
+  border-radius: 20px;
+  padding-bottom: 3rem;
+}
+
+.dashboard_top_inner {
+  padding: 1.5rem;
+}
+
+.dashboard_top img {
+  width: 70px;
+  border: 3px solid white;
+  border-radius: 100%;
+}
+
+.dashboard_top_textContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  color: white;
+}
+
+.dashboard_top_textContainer p,
+.dashboard_top_textContainer h1 {
+  margin: 0;
+}
+
+.dashboard_top_textContainer h1 {
+  font-weight: 300;
+  font-size: 40px;
+  margin-top: 6px;
+}
+
+.dashboard_top_textContainer p {
+  font-weight: 300;
+  opacity: 60%;
+}
+
+.dashboard_bottom ul li {
+  padding: 0.7rem;
+  list-style: none;
+  margin-left: -1rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.dashboard_bottom_list {
+  color: rgba(255, 255, 255, 0.281);
+}
+
+.dashboard_bottom_list:hover {
+  color: rgb(255, 255, 255);
+}
+
+.active {
+  color: rgb(255, 255, 255);
+}
+
+.dailyActive {
+  color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1074px) {
+  .container {
+    width: 100%;
+    grid-column: span 2;
+    max-width: 100%;
+  }
+
+  .dashboard_top {
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  .dashboard_top_textContainer h1 {
+ 
+    font-size: 30px;
+   
+  }
+}

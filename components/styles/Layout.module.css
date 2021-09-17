@@ -1,0 +1,37 @@
+.wrapper {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 30px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 15rem;
+  padding-right: 7rem;
+}
+
+@media only screen and (max-width: 1700px) {
+  .wrapper {
+    padding-top: 12rem;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .wrapper {
+    padding-top: 8rem;
+    padding-right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  .wrapper {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .wrapper {
+    padding: 20px;
+    display: block;
+  }
+}
