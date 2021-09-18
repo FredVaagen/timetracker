@@ -14,7 +14,7 @@ const Home: NextPage = (data: any) => {
 export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch(`https://api.jsonbin.io/b/6145c5f34a82881d6c514921`);
+  const res = await fetch(`https://api.jsonbin.io/b/6145cce69548541c29b44904`);
   const data = await res.json();
 
   if (!data) {
