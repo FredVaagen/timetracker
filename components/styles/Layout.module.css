@@ -2,12 +2,12 @@
   max-width: 1440px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
   gap: 30px;
   height: auto;
   margin: 0 auto;
   padding-top: 15rem;
   padding-right: 7rem;
+  padding-bottom: 10rem;
 }
 
 @media only screen and (max-width: 1700px) {

@@ -33,7 +33,19 @@
   border-radius: 20px;
   margin-top: -1rem;
   padding-bottom: 1rem;
+  transition: .3s;
 }
+
+.card_content:hover {
+  filter: brightness(150%);
+  cursor: pointer;
+}
+
+.card_ellipsis:hover {
+  filter: brightness(150%);
+}
+
+
 
 .card_content_name {
   justify-content: space-between;
@@ -48,10 +60,7 @@
   text-transform: capitalize;
 }
 
-.card_content_name img:hover {
-  cursor: pointer;
-  opacity: 200%;
-}
+
 
 .card_content_hours {
   display: flex;

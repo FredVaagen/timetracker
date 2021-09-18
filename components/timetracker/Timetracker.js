@@ -140,7 +140,7 @@ function Timetracker({ data }) {
                 <div className={card.card_content_name}>
                   <h3>{data.title}</h3>
                   <p>
-                    <img src="/images/icon-ellipsis.svg" />
+                    <img className={card.card_ellipsis} src="/images/icon-ellipsis.svg" />
                   </p>
                 </div>
                 <div className={card.card_content_hours}>

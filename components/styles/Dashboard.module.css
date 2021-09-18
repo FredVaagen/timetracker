@@ -87,3 +87,16 @@
    
   }
 }
+
+
+
+@media only screen and (max-width: 400px) {
+  .container  {
+    margin-bottom: 2rem;
+
+  }
+
+  .dashboard_bottom {
+    padding-bottom: 5px;
+  }
+}
