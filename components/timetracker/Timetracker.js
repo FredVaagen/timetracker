@@ -6,8 +6,16 @@ import colors from "../styles/Colors.module.css";
 
 function Timetracker({ data }) {
   const join = (...classNames) => classNames.join(" ");
-
   const [toggleOverview, setToggleOverview] = useState("daily");
+
+  let current;
+  let previous;
+
+  let colorBanner;
+  let imageBanner;
+  let dailyActive;
+  let weeklyActive;
+  let monthlyActive;
 
   function toggleDaily() {
     setToggleOverview("daily");
@@ -20,13 +28,6 @@ function Timetracker({ data }) {
   function toggleMonthly() {
     setToggleOverview("monthly");
   }
-
-  let colorBanner;
-  let imageBanner;
-
-  let dailyActive;
-  let weeklyActive;
-  let monthlyActive;
 
   if (toggleOverview == "daily") {
     dailyActive = dashboard.active;
@@ -119,21 +120,16 @@ function Timetracker({ data }) {
           const monthlyPrevious =
             "Last Month" + " " + "-" + " " + data.timeframes.monthly.previous;
 
-          useEffect(() => {
-            if (toggleOverview == "daily") {
-              setCurrent(dailyCurrent);
-              setPrevious(dailyPrevious);
-            } else if (toggleOverview == "weekly") {
-              setCurrent(weeklyCurrent);
-              setPrevious(weeklyPrevious);
-            } else if (toggleOverview == "monthly") {
-              setCurrent(monthlyCurrent);
-              setPrevious(monthlyPrevious);
-            }
-          }, [toggleOverview]);
-
-          const [current, setCurrent] = useState(dailyCurrent);
-          const [previous, setPrevious] = useState(dailyPrevious);
+          if (toggleOverview == "daily") {
+            current = dailyCurrent;
+            previous = dailyPrevious;
+          } else if (toggleOverview == "weekly") {
+            current = weeklyCurrent;
+            previous = weeklyPrevious;
+          } else if (toggleOverview == "monthly") {
+            current = monthlyCurrent;
+            previous = monthlyPrevious;
+          }
 
           return (
             <div key={data.title} className={join(card.card)}>
