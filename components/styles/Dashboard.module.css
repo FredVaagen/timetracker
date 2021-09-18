@@ -82,18 +82,13 @@
 
 @media only screen and (max-width: 1074px) {
   .dashboard_top_textContainer h1 {
- 
     font-size: 30px;
-   
   }
 }
 
-
-
 @media only screen and (max-width: 400px) {
-  .container  {
+  .container {
     margin-bottom: 2rem;
-
   }
 
   .dashboard_bottom {
