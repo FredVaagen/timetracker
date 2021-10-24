@@ -47,7 +47,7 @@ function Timetracker({ data }) {
             <img src="/images/image-jeremy.png" />
             <div className={dashboard.dashboard_top_textContainer}>
               <p>Report for</p>
-              <h1>Jeremy Robson</h1>
+              <h1>Jeremy Rob</h1>
             </div>
           </div>
         </div>
